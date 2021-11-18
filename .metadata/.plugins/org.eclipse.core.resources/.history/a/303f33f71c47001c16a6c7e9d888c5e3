@@ -1,0 +1,10 @@
+package loja_virtual;
+
+public class TestaInsercaoComParametro {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

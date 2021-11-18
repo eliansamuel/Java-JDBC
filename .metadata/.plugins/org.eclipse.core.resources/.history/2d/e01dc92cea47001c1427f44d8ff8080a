@@ -1,0 +1,23 @@
+package loja_virtual;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import DAO.ProdutoDAO;
+import modelo.Produto;
+
+public class TesteInsercaoEListagemComProduto {
+
+	public static void main(String[] args) throws SQLException{
+		
+		Produto comoda = new Produto("Cômoda", "Cômoda Vertical");
+		
+		try(Connection connection = new ConnectionFactory().recuperarConexao()){
+			ProdutoDAO produtoDao = new ProdutoDAO(connection);
+			produtoDao.salvar(comoda);
+			List<Produto> listDeProdutos = produtoDao.listar();
+			listDeProdutos.stream().forEach(lp -> System.out.println(ln));
+		}
+	}
+}

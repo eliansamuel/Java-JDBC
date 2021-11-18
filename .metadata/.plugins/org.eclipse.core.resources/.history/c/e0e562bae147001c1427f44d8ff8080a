@@ -1,0 +1,13 @@
+package loja_virtual;
+
+import modelo.Produto;
+
+public class TesteInsercaoComProduto {
+
+	public static void main(String[] args) {
+		
+		Produto comoda = new Produto("Cômoda", "Cômoda Vertical");
+		
+	}
+
+}
